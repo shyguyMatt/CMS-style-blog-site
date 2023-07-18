@@ -9,6 +9,14 @@ router.get('/', async (req, res) => {
         res.render('recentposts', {posts});
 })
 
+router.get('/login', (req, res) => {
+    res.render('login');
+})
+
+router.get('/signup', (req, res) => {
+    res.render('signup');
+})
+
 router.get('/test', (req, res) => {
     res.json('homeroutes test success!');
 });
