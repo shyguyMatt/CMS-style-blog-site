@@ -10,9 +10,15 @@
 <body style="margin: 0px">
   <header>
     <ul id="navBar">
-      <li><a href="/api/test">Home</a></li>
-      <li><a href="#dashboard">Dashboard</a></li>
-      <li><a href="#logout">Logout</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a id="logout">Logout</a></li>
+      <li><a href="/dashboard">Dashboard</a></li>
+      {{#if logged_in}}
+      <li><a href="/api/users/logout">Logout</a></li>
+      {{/if}}
+      {{#unless logged_in}}
+      <li><a href="/login">Login</a></li>
+      {{/unless}}
     </ul>
     <h1>The Blog Site</h1>    
   </header>
@@ -21,4 +27,5 @@
     {{{ body }}}
   </main>
   </body>
+  <script src="/js/logout.js"></script>
 </html>
