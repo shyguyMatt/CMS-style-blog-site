@@ -8,5 +8,25 @@
     "express-session": "^1.17.3",
     "mysql2": "^3.5.1",
     "sequelize": "^6.3.5"
-  }
+  },
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seeds/index.js"
+  },
+  "name": "cms-style-blog-site",
+  "description": "repository for cms style blog site challenge",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shyguyMatt/CMS-style-blog-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shyguyMatt/CMS-style-blog-site/issues"
+  },
+  "homepage": "https://github.com/shyguyMatt/CMS-style-blog-site#readme"
 }
